@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Ludo
 {
-    class Board
+    class Board 
     {
         Piece[] brikker = new Piece[16];
         Felter[] arrboard = new Felter[52];
 
-        public Board()
+        public Board() //Den her variable printer basically boarded ud når man nævner den i program.cs man laver en index som starter fra 0 til hvor mange felter der er på et board, også giver den en x og y.
         {
             this.arrboard[0] = new Felter(2, 7, "Red");
             this.arrboard[1] = new Felter(3, 7, "White");
